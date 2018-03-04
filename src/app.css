@@ -1,0 +1,16 @@
+:root {
+    --backgroundColor: #17252A;
+}
+
+body{
+    font-family: Arial;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+
+}
+.noUserSelect{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

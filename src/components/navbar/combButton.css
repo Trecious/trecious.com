@@ -1,0 +1,143 @@
+.combBtnCon{
+
+    width: 100vw;
+    height: 90px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.combBtnCon > .btn:hover + .ext{
+    box-shadow: 10000px 10000px var(--rectColor) inset;
+    z-index: 100000 !important;
+}
+
+.combBtnCon > .btn:hover > *{
+    fill: var(--buttonOpenedColor);
+}
+
+.combBtnCon > .btn:hover + .ext + .btn > *{
+    fill: var(--buttonOpenedColor);
+}
+
+.combBtnCon > .btn:hover + .ext > *{
+    fill: var(--buttonOpenedColor);
+}
+
+.combBtnCon > .btnAboutMe:hover + .ext{
+    width: 320px !important;
+
+}
+
+.combBtnCon > .btnProjects:hover + .ext{
+    width: 285px !important;
+
+}
+
+.combBtnCon > .btnEducation:hover + .ext{
+    width: 330px !important;
+
+}
+
+.combBtnCon > .btnExperience:hover + .ext{
+    width: 360px !important;
+
+}
+
+.combBtnCon > .btnGetInTouch:hover + .ext{
+    width: 380px !important;
+
+}
+
+.combBtnCon > .btn:hover + .ext + .btn + .icon svg >*{
+    fill: var(--openedColor);
+}
+
+.combBtnCon > .btn:active > *{
+    fill: var(--buttonPressedColor);
+}
+
+.combBtnCon > .btn:active + .ext > *{
+    fill: var(--buttonPressedColor);
+}
+
+.combBtnCon > .btn:active + .ext + .btn > *{
+    fill: var(--buttonPressedColor);
+}
+
+.combBtnCon > .btn{
+    pointer-events: all;
+    cursor: pointer;
+    width: 90px;
+}
+
+.combBtnCon > .ext{
+    pointer-events: all;
+    height: 90px;
+    margin-left: -50px;
+    margin-right: -50px;
+    width: 0px;
+
+    -webkit-transition: width 0.25s ease-in-out;
+    transition: width 0.25s ease-in-out;
+
+}
+
+.combBtnCon > .ext > *{
+    fill: var(--buttonColor);
+}
+
+.combBtnCon > .btn > *{
+    fill: var(--buttonColor);
+}
+
+.combBtnCon > .noPointer{
+    pointer-events: none;
+}
+
+.combBtnCon > .mRight{
+    margin-left: 10px;
+}
+
+.combBtnCon > .icon{
+    height: 78px;
+    width: 90px;
+    margin-top: -88px;
+    pointer-events: none;
+}
+
+.combBtnCon > .icon > svg{
+    margin-left: 15px;
+    margin-top: 8.5px;
+    height: 60px;
+    pointer-events: none;
+}
+
+.combBtnCon > .icon > svg > *{
+    fill: var(--closedColor);
+    pointer-events: none;
+}
+
+.combBtnCon > .text{
+    font-family: Roboto;
+    font-weight: 800;
+    font-size: 60px;
+    margin-top: -75px;
+    margin-left: 90px;
+    color: var(--closedColor);
+    overflow: hidden;
+    height: 70px;
+
+    width: 0;
+    -webkit-transition: width 0.36s ease-in;
+    transition: width 0.36s ease-in;
+
+    -webkit-transition: color 6s;
+    transition: color 6s;
+}
+
+.combBtnCon > .btn:hover + .ext + .btn + .icon + .text{
+    color: var(--openedColor);
+    width: 900px;
+    -webkit-transition: width 0.36s ease-in;
+    transition: width 0.36s ease-in;
+}

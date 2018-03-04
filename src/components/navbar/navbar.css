@@ -1,0 +1,92 @@
+:root {
+    --buttonColor: #3AAFA9;
+    --buttonOpenedColor: white;
+    --buttonPressedColor: var(--buttonOpenedColor);
+
+    --closedColor: white;
+    --openedColor: black;
+
+    --rectColor: var(--backgroundColor);
+    --dekoColor: #2B7A78;
+}
+
+#navbar{
+    position: fixed;
+    z-index: 1;
+}
+
+#navbar > #btn1{
+    position: fixed;
+    top: 0px;
+    left: 20px;
+    z-index: 15;
+}
+#navbar > #btn2{
+    position: fixed;
+    top: 85px;
+    left: 20px;
+    z-index: 14;
+}
+#navbar > #btn3{
+    position: fixed;
+    top: 42.5px;
+    left: 92.5px;
+    z-index: 13;
+}
+#navbar > #btn4{
+    position: fixed;
+    top: 0px;
+    left: 165px;
+    z-index: 12;
+}
+#navbar > #btn5{
+    position: fixed;
+    top: 170px;
+    left: 20px;
+    z-index: 11;
+}
+
+#navbar > #deko1{
+    width: 90px;
+    position: fixed;
+    top: -42.5px;
+    left: 92.5px;
+}
+#navbar > #deko2{
+    width: 90px;
+    position: fixed;
+    top: -42.5px;
+    left: 237.5px;
+}
+#navbar > #deko3{
+    width: 90px;
+    position: fixed;
+    top: -42.5px;
+    left: -52.5px;
+}
+#navbar > #deko4{
+    width: 90px;
+    position: fixed;
+    top: 42.5px;
+    left: -52.5px;
+}
+#navbar > #deko5{
+    width: 90px;
+    position: fixed;
+    top: 127.5px;
+    left: -52.5px;
+}
+#navbar > #deko6{
+    width: 90px;
+    position: fixed;
+    top: 212.5px;
+    left: -52.5px;
+}
+
+#navbar > .deko > path{
+    fill: var(--dekoColor);
+}
+
+#navbar > .deko{
+    z-index: 1;
+}
